@@ -1,5 +1,3 @@
-## ✨ Screenshots
-
 ## 🌟 About
 It simply tracking your location and store it in persistence storage.
 
