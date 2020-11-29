@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_mini">16dp</dimen>
+    <dimen name="text_size_medium">24dp</dimen>
+
+    <dimen name="padding_parent_view">10dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

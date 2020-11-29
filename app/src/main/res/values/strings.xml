@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TrackMe</string>
+    <string name="maps_api_key">AIzaSyCW1AQ7Bw7z12X5bQCok3jvg_qYR9p6mpo</string>
+
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="distance">%s km\nDistance</string>
+    <string name="avg_speed">%s km/h\nAvg. Speed</string>
+    <string name="speed">%s km/h\nSpeed</string>
+    <string name="get_started">Let\'s start tracking the location</string>
+    <string name="no_google_play_service_available">No Google Play Service found. Please install it.</string>
+    <string name="title_alert_no_internet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="btn_label_refresh">Refresh</string>
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+
+</resources>

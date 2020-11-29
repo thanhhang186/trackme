@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".modules.record.RecordActivity">
+
+    <Button android:id="@+id/btn_replay"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_stop"
+        android:background="@drawable/ic_replay"/>
+
+    <Button android:id="@+id/btn_stop"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintStart_toEndOf="@id/btn_replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp_15"
+        android:background="@drawable/ic_stop" />
+
+    <Button android:id="@+id/btn_pause"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/ic_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_replay"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/tv_speed"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:text="@string/distance"
+        style="@style/TrackInfo"/>
+
+    <TextView android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_replay"
+        app:layout_constraintStart_toEndOf="@id/tv_distance"
+        app:layout_constraintEnd_toStartOf="@id/tv_duration"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_distance"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/speed"
+        style="@style/TrackInfo"/>
+
+    <TextView android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_speed"
+        app:layout_constraintBottom_toBottomOf="@id/tv_speed"
+        app:layout_constraintStart_toEndOf="@id/tv_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="@style/TrackInfo"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@id/tv_speed"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
